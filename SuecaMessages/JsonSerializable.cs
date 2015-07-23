@@ -2,7 +2,7 @@
 using System.IO;
 using Newtonsoft.Json;
 
-namespace SuecaInterface
+namespace SuecaMessages
 {
     public abstract class JsonSerializable
     {
