@@ -15,4 +15,9 @@ namespace SuecaMessages
     {
         void Play(int id, string card);
     }
+
+    public interface IIAActions : Thalamus.IAction
+    {
+        void Decision(string card);
+    }
 }
