@@ -3,14 +3,16 @@ using Thalamus;
 
 namespace SuecaMessages
 {
-    public interface IStartEvents : Thalamus.IPerception
+    public interface ISuecaPerceptions : Thalamus.IPerception
     {
-        void Init(int id, int trump, int firstPlayer, int[] initialCards);
+        void GameStart(int id, int teamId, int trump, string[] cards);
+        void GameEnd(int team0Score, int team1Score);
+        void NextPlayer(int id);
+        void Play(int id, string card);
     }
 
-    public interface ICardsEvents : Thalamus.IPerception
+    public interface ISuecaActions : Thalamus.IAction
     {
-        void PlayedCard(int playerId, int card);
-        void Play();
+        void Play(int id, string card);
     }
 }
