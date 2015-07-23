@@ -2,14 +2,6 @@
 
 namespace SuecaMessages
 {
-    public enum Suit
-    {
-        Clubs,
-        Diamonds,
-        Hearts,
-        Spades
-    }
-
     public enum Rank
     {
         Two,
@@ -24,15 +16,23 @@ namespace SuecaMessages
         Ace
     }
 
+    public enum Suit
+    {
+        Clubs,
+        Diamonds,
+        Hearts,
+        Spades
+    }
+
     public class Card : JsonSerializable
     {
-        public Suit Suit;
         public Rank Rank;
+        public Suit Suit;
 
-        public Card(Suit suit, Rank rank)
+        public Card(Rank rank, Suit suit)
         {
-            Suit = suit;
             Rank = rank;
+            Suit = suit;
         }
     }
 }
