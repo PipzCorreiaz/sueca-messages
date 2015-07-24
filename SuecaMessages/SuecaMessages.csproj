@@ -42,7 +42,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Thalamus">
-      <HintPath>..\..\..\thalamus-code\Binaries\Release\Thalamus.dll</HintPath>
+      <HintPath>..\..\thalamus-code\Binaries\Release\Thalamus.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
