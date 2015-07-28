@@ -19,5 +19,6 @@ namespace SuecaMessages
     public interface IIAActions : Thalamus.IAction
     {
         void Decision(string card);
+        void ExpectedScore(int team0Score, int team1Score);
     }
 }
