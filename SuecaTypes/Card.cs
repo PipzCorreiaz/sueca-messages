@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SuecaMessages
+﻿namespace SuecaTypes
 {
     public enum Rank
     {

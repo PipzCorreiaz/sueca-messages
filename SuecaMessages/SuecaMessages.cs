@@ -1,9 +1,8 @@
-﻿using System;
-using Thalamus;
+﻿using Thalamus;
 
 namespace SuecaMessages
 {
-    public interface ISuecaPerceptions : Thalamus.IPerception
+    public interface ISuecaPerceptions : IPerception
     {
         void GameStart(int id, int teamId, string trump, string[] cards);
         void GameEnd(int team0Score, int team1Score);
@@ -11,12 +10,12 @@ namespace SuecaMessages
         void Play(int id, string card);
     }
 
-    public interface ISuecaActions : Thalamus.IAction
+    public interface ISuecaActions : IAction
     {
         void Play(int id, string card);
     }
 
-    public interface IIAActions : Thalamus.IAction
+    public interface IIAActions : IAction
     {
         void Decision(string card);
         void ExpectedScore(int team0Score, int team1Score);
