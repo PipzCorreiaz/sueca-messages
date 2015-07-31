@@ -18,6 +18,6 @@ namespace SuecaMessages
     public interface IIAActions : IAction
     {
         void Decision(string card);
-        void ExpectedScore(int team0Score, int team1Score);
+        void ExpectedScores(int team0Score, int team1Score);
     }
 }
