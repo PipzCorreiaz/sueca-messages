@@ -23,6 +23,7 @@ namespace SuecaMessages
     public interface IIAActions : IAction
     {
         void Decision(string card, string followingInfo);
-        void ExpectedScores(int team0Score, int team1Score);
+        void Expectation(string successProbability, string failureProbability);
+        void MoveDesirabilities(string desirability, string desirabilityForOther);
     }
 }
