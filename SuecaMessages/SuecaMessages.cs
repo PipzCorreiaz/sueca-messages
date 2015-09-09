@@ -11,6 +11,7 @@ namespace SuecaMessages
         void Shuffle(int playerId);
         void Cut(int playerId);
         void Deal(int playerId);
+        void ReceiveRobotCards();
         void NextPlayer(int id);
         void Play(int id, string card);
     }
@@ -22,7 +23,7 @@ namespace SuecaMessages
 
     public interface IIAActions : IAction
     {
-        void Decision(string card, string followingInfo);
+        void Decision(string card, string rank, string suit, string followingInfo);
         void Expectation(string successProbability, string failureProbability);
         void MoveDesirabilities(string desirability, string desirabilityForOther);
     }
