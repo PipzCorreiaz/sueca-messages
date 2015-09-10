@@ -24,7 +24,6 @@ namespace SuecaMessages
     public interface IIAActions : IAction
     {
         void Decision(string card, string rank, string suit, string followingInfo);
-        void Expectation(string successProbability, string failureProbability);
-        void MoveDesirabilities(string desirability, string desirabilityForOther);
+        void MoveExpectations(int playerId, string desirability, string desirabilityForOther, string successProbability, string failureProbability);
     }
 }
