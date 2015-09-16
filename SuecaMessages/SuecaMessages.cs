@@ -25,5 +25,15 @@ namespace SuecaMessages
     {
         void Decision(string card, string rank, string suit, string followingInfo);
         void MoveExpectations(int playerId, string desirability, string desirabilityForOther, string successProbability, string failureProbability);
+
+        void ForwardSessionStart(int numGames);
+        void ForwardGameStart(int gameId, int playerId, int teamId, string trump, string[] cards);
+        void ForwardGameEnd(int team0Score, int team1Score);
+        void ForwardSessionEnd(int team0Score, int team1Score);
+        void ForwardShuffle(int playerId);
+        void ForwardCut(int playerId);
+        void ForwardDeal(int playerId);
+        void ForwardReceiveRobotCards();
+        void ForwardNextPlayer(int id);
     }
 }
