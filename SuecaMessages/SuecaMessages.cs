@@ -12,6 +12,7 @@ namespace SuecaMessages
         void Cut(int playerId);
         void Deal(int playerId);
         void ReceiveRobotCards();
+        void TrickEnd(int winnerId, int trickPoints);
         void NextPlayer(int id);
         void Play(int id, string card);
     }
@@ -34,6 +35,7 @@ namespace SuecaMessages
         void ForwardCut(int playerId);
         void ForwardDeal(int playerId);
         void ForwardReceiveRobotCards();
+        void ForwardTrickEnd(int winnerId, int trickPoints);
         void ForwardNextPlayer(int id);
     }
 }
