@@ -15,6 +15,7 @@ namespace SuecaMessages
         void TrickEnd(int winnerId, int trickPoints);
         void NextPlayer(int id);
         void Play(int id, string card);
+        void Renounce(int playerId);
     }
 
     public interface ISuecaActions : IAction
@@ -37,5 +38,6 @@ namespace SuecaMessages
         void ForwardReceiveRobotCards();
         void ForwardTrickEnd(int winnerId, int trickPoints);
         void ForwardNextPlayer(int id);
+        void ForwardRenounce(int playerId);
     }
 }
