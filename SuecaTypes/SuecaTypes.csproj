@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\thalamus-code\Binaries\Release\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\SERA_1-12-2015\Binaries\Thalamus\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
