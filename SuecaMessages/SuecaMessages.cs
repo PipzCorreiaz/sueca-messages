@@ -4,7 +4,7 @@ namespace SuecaMessages
 {
     public interface ISuecaPerceptions : IPerception
     {
-        void SessionStart(int numGames);
+        void SessionStart(int numGames, int[] agentsIds);
         void GameStart(int gameId, int playerId, int teamId, string trumpCard, int trumpCardPlayer, string[] cards);
         void GameEnd(int team0Score, int team1Score);
         void SessionEnd(int team0Score, int team1Score);
