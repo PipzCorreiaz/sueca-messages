@@ -4,7 +4,7 @@ namespace SuecaMessages
 {
     public interface ISuecaPerceptions : IPerception
     {
-        void SessionStart(int sessionId, int numGames, int[] agentsIds);
+        void SessionStart(int sessionId, int numGames, int[] agentsIds, int shouldGreet);
         void GameStart(int gameId, int playerId, int teamId, string trumpCard, int trumpCardPlayer, string[] cards);
         void GameEnd(int team0Score, int team1Score);
         void SessionEnd(int sessionId, int team0Score, int team1Score);
@@ -39,7 +39,7 @@ namespace SuecaMessages
         void Decision(string card, string rank, string suit, string followingInfo);
         void MoveExpectations(int playerId, string desirability, string desirabilityForOther, string successProbability, string failureProbability, string additionalInfo);
 
-        void ForwardSessionStart(int sessionId, int numGames, int numRobots, int playerId);
+        void ForwardSessionStart(int sessionId, int numGames, int numRobots, int playerId, int shouldGreet);
         void ForwardGameStart(int gameId, int playerId, int teamId, string trumpCard, int trumpCardPlayer, string[] cards);
         void ForwardGameEnd(int team0Score, int team1Score);
         void ForwardSessionEnd(int sessionId, int team0Score, int team1Score);
