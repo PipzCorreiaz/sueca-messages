@@ -15,14 +15,13 @@ namespace SuecaMessages
         void ReceiveRobotCards(int playerId);
         void TrickEnd(int winnerId, int trickPoints);
         void NextPlayer(int id);
-        void Play(int id, string card);
+        void Play(int id, string card, string playInfo);
         void Renounce(int playerId);
-        void ResetTrick();
     }
 
     public interface ISuecaActions : IAction
     {
-        void Play(int id, string card);
+        void Play(int id, string card, string playInfo);
     }
 
     public interface IRobotPerceptions : IAction
