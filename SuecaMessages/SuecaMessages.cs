@@ -4,19 +4,19 @@ namespace SuecaMessages
 {
     public interface ISuecaPerceptions : IPerception
     {
-        void SessionStart(int sessionId, int numGames, int[] agentsIds, int shouldGreet);
-        void GameStart(int gameId, int playerId, int teamId, string trumpCard, int trumpCardPlayer, string[] cards);
-        void GameEnd(int team0Score, int team1Score);
-        void SessionEnd(int sessionId, int team0Score, int team1Score);
-        void Shuffle(int playerId);
-        void Cut(int playerId);
-        void Deal(int playerId);
-        void TrumpCard(string trumpCard, int trumpCardPlayer);
-        void ReceiveRobotCards(int playerId);
-        void TrickEnd(int winnerId, int trickPoints);
-        void NextPlayer(int id);
-        void Play(int id, string card, string playInfo);
-        void Renounce(int playerId);
+        void SessionStart(int sessionId, int numGames, int[] agentsIds, int floorId);
+        void GameStart(int gameId, int playerId, int teamId, string trumpCard, int trumpCardPlayer, string[] cards, int floorId);
+        void GameEnd(int team0Score, int team1Score, int floorId);
+        void SessionEnd(int sessionId, int team0Score, int team1Score, int floorId);
+        void Shuffle(int playerId, int floorId);
+        void Cut(int playerId, int floorId);
+        void Deal(int playerId, int floorId);
+        void TrumpCard(string trumpCard, int trumpCardPlayer, int floorId);
+        void ReceiveRobotCards(int playerId, int floorId);
+        void TrickEnd(int winnerId, int trickPoints, int floorId);
+        void NextPlayer(int id, int floorId);
+        void Play(int id, string card, string playInfo, int floorId);
+        void Renounce(int playerId, int floorId);
     }
 
     public interface ISuecaActions : IAction
